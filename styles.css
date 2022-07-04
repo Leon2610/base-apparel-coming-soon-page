@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+
+  --DarkGrayishRed: hsl(0, 6%, 24%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+main .card-container {
+  width: 60%;
+  background: url(images/bg-pattern-desktop.svg) no-repeat,
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-size: 100% 100%;
+}
+
+main .card-container .container {
+  margin: 4rem 10.5rem;
+}
+
+main .card-container h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  line-height: 4.5rem;
+  margin-top: 8rem;
+}
+
+main .card-container h1 span {
+  color: var(--DesaturatedRed);
+  font-weight: 300;
+}
+
+main .card-container p {
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: var(--DesaturatedRed);
+  margin-bottom: 3rem;
+}
+
+main .hero-image {
+  width: 44%;
+  background: url(images/hero-desktop.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main .card-container form {
+  position: relative;
+}
+
+main .card-container form input {
+  padding: 1.2rem;
+  width: 90%;
+  border-radius: 50px;
+  border: 1px solid var(--DesaturatedRed);
+}
+
+main .card-container form input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--DesaturatedRed);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main .container form .error-icon {
+  display: none;
+}
+
+main .container form.error {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+main .msg.text {
+  margin-top: 1rem;
+}
+
+main .card-container form button {
+  position: absolute;
+  padding: 1rem 2.8rem;
+  right: 10%;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+main .card-container form button:hover {
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 79%, 68%));
+}
+
+@media (max-width: 1024px) {
+  main .card-container .container {
+    margin: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main .card-container {
+    width: 100%;
+  }
+
+  main .card-container .container {
+    margin: 0;
+  }
+
+  main .card-container .container h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  main .card-container p {
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin: 2rem;
+    color: var(--DesaturatedRed);
+    text-align: center;
+  }
+
+  main .card-container .container .logo .img-hero {
+    height: 400px;
+    background: url(images/hero-mobile.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  main .card-container .container .logo img {
+    margin: 2rem;
+  }
+
+  main .hero-image {
+    background: white;
+    width: 0%;
+  }
+
+  main .card-container form {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  main .card-container .container .logo .img-hero {
+    height: 200px;
+  }
+}
