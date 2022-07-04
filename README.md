@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-html-css-flexbox-js-m5mEYiUUXy
+- Live Site URL: https://leon2610.github.io/base-apparel-coming-soon-page/
 
 ## My process
 
